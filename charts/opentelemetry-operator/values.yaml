@@ -35,6 +35,10 @@ manager:
   ## e.g ENV_VAR: env_value
   env: {}
 
+  annotations: {}
+
+  podAnnotations: {}
+
   # -- Create the manager ServiceAccount
   serviceAccount:
     create: true
