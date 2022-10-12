@@ -36,6 +36,10 @@ manager:
   env:
     ENABLE_WEBHOOKS: "true"
 
+  annotations: {}
+
+  podAnnotations: {}
+
   # -- Create the manager ServiceAccount
   serviceAccount:
     create: true
