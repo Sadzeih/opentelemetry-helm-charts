@@ -1,0 +1,65 @@
+apiVersion: v1
+entries:
+  opentelemetry-collector:
+  - apiVersion: v2
+    appVersion: 0.61.0
+    created: "2022-10-12T13:59:49.262073218Z"
+    description: OpenTelemetry Collector Helm chart for Kubernetes
+    digest: 63beb69ab4383e37af669ddad4f98785d9a6e647d4938e3901c25096049fed3b
+    home: https://opentelemetry.io/
+    icon: https://opentelemetry.io/img/logos/opentelemetry-logo-nav.png
+    maintainers:
+    - name: dmitryax
+    - name: TylerHelmuth
+    name: opentelemetry-collector
+    sources:
+    - https://github.com/open-telemetry/opentelemetry-collector
+    - https://github.com/open-telemetry/opentelemetry-collector-contrib
+    type: application
+    urls:
+    - https://github.com/Sadzeih/opentelemetry-helm-charts/releases/download/opentelemetry-collector-0.35.0/opentelemetry-collector-0.35.0.tgz
+    version: 0.35.0
+  opentelemetry-demo:
+  - apiVersion: v2
+    appVersion: 0.5.0-alpha
+    created: "2022-10-12T13:59:49.606203411Z"
+    dependencies:
+    - condition: observability.otelcol.enabled
+      name: opentelemetry-collector
+      repository: https://open-telemetry.github.io/opentelemetry-helm-charts
+      version: 0.35.0
+    description: opentelemetry demo helm chart
+    digest: 9cd64382480e3de637d74ea871bad98d64665daeb350ebc10f8f388bb43c5d3f
+    home: https://opentelemetry.io/
+    icon: https://opentelemetry.io/img/logos/opentelemetry-logo-nav.png
+    maintainers:
+    - name: dmitryax
+    - name: tylerhelmuth
+    - name: wph95
+    name: opentelemetry-demo
+    sources:
+    - https://github.com/open-telemetry/opentelemetry-demo
+    type: application
+    urls:
+    - https://github.com/Sadzeih/opentelemetry-helm-charts/releases/download/opentelemetry-demo-0.6.1/opentelemetry-demo-0.6.1.tgz
+    version: 0.6.1
+  opentelemetry-operator:
+  - apiVersion: v2
+    appVersion: 0.60.0
+    created: "2022-10-12T13:59:49.877040278Z"
+    description: OpenTelemetry Operator Helm chart for Kubernetes
+    digest: 67da6156d2cc2af1fae28c6c24f96ea6ef610e29e5c7bfb9b4ffe31433b11c35
+    home: https://opentelemetry.io/
+    icon: https://raw.githubusercontent.com/cncf/artwork/a718fa97fffec1b9fd14147682e9e3ac0c8817cb/projects/opentelemetry/icon/color/opentelemetry-icon-color.png
+    maintainers:
+    - name: Allex1
+    - name: dmitryax
+    - name: TylerHelmuth
+    name: opentelemetry-operator
+    sources:
+    - https://github.com/open-telemetry/opentelemetry-operator
+    type: application
+    urls:
+    - https://github.com/Sadzeih/opentelemetry-helm-charts/releases/download/opentelemetry-operator-0.13.3/opentelemetry-operator-0.13.3.tgz
+    version: 0.13.3
+generated: "2022-10-12T13:59:49.877074879Z"
