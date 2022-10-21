@@ -735,7 +735,18 @@
                     "title": "The namespaceSelector Schema",
                     "required": [],
                     "properties": {},
-                    "examples": [{}]
+                    "examples": [{
+                        "matchExpressions": [
+                            {
+                                "key": "runlevel",
+                                "operator": "NotIn",
+                                "values": [
+                                    "0",
+                                    "1"
+                                ]
+                            }
+                        ]
+                    }]
                 },
                 "objectSelector": {
                     "type": "object",
